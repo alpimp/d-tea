@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+<body>
+    
+      <header class="header">
+			<div class="logo"><a class="header__left-logo redirectlink"><img  src="/images/text866.png"
+						alt="D.S. Flirting"></a></div>
+		</header>
+
+                {{ block "main" . }}
+
+                {{ end }}
+                {{ partial "form1.html" . }}
+
+</body>
+</html>
